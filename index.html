@@ -1,59 +1,38 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-<meta charset="utf-8">
-<title>Swetha: Employee Management System</title>
-<style type="text/css">
-    /* Add some padding on document's body to prevent the content
-    to go underneath the header and footer */
-    body{        
-        padding-top: 60px;
-        padding-bottom: 40px;
-    }
-    .fixed-header, .fixed-footer{
-        width: 100%;
-        position: fixed;        
-        background: #333;
-        padding: 10px 0;
-        color: #fff;
-    }
-    .fixed-header{
-        top: 0;
-    }
-    .fixed-footer{
-        bottom: 0;
-    }
-    .container{
-        width: 80%;
-        margin: 0 auto; /* Center the DIV horizontally */
-    }
-    nav a{
-        color: #fff;
-        text-decoration: none;
-        padding: 7px 25px;
-        display: inline-block;
-    }
-</style>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Pig Game</title>
+    </head>
 
-
-    <div class="fixed-header">
-        <div class="container">
-            <nav>
-        <a href="registration.html">Register New User</a>
-        <a href="empexpentry.jsp">Experience Entry</a>
-        <a href="shift.jsp">Shift Entry</a>
-        <a href="attendance.jsp">Attendance Entry</a>
-        <a href="leave.jsp">Leave Entry</a>
-        <a href="payroll.jsp">Payroll Entry</a> 
-        <a href="historyfinal.jsp">History</a>
-            </nav>
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            
+            <img src="dice-5.png" alt="Dice" class="dice">
         </div>
-    </div>
-    <div class="container">
-        <p>Employee Management System</p>
-    </div> 
-    
-    <div class="fixed-footer">
-        <div class="container">Copyright &copy; 2018 - 2109 swetha</div>        
-    </div>
+        
+        <script src="Final-app.js"></script>
     </body>
 </html>
