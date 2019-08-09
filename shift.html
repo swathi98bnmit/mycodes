@@ -1,0 +1,87 @@
+<html>
+    <head>
+<meta charset="utf-8">
+<title>Swetha: Employee Management System</title>
+<style type="text/css">
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+</style>
+
+
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+        <a href="registration.html">Register New User</a>
+        <a href="empexpentry.jsp">Experience Entry</a>
+        <a href="shift.jsp">Shift Entry</a>
+        <a href="attendance.jsp">Attendance Entry</a>
+        <a href="leave.jsp">Leave Entry</a>
+        <a href="payroll.jsp">Payroll Entry</a> 
+        <a href="historyfinal.jsp">History</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <p>Employee Management System</p>
+    </div> 
+    <body>
+        <br><br><br><br><br><br>
+    <center>
+        <form name="Registration1" method="post" action="shiftentry.jsp"> 
+            Emp Code<select  name="code">
+                <option value ="code1">120</option>
+                <option value="code2">121</option>
+                 </select><br>
+                 
+            Emp Name<input type="text" name="name"><br>
+            
+            Shift Schedule Code<select  name="shift">
+                <option value ="shift1">Code1</option>
+                <option value="shift2">Code2</option>
+                 </select><br>
+            
+            Schedule Type<select  name="schedule">
+                <option value ="schedule1">SCHE 1</option>
+                <option value="schedule2">SCHE 2</option>
+                 </select><br>
+               
+            Date <input type="text" name="date"><br>
+            
+            Rotation Period<input type="text" name="Rot"><br>
+            
+            
+            
+        </form>
+    </center>
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2018 - 2109 swetha</div>        
+    </div>
+    </body>
+</html>

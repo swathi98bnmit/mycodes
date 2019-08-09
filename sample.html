@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction(x) {
+    x.style.background = "yellow";
+    x.name.value = "dddd"
+    document.forms["test"]["name"].value = "asdf"
+}
+</script>
+</head>
+<body>
+    <form name="test" method="post">
+Enter your name: <input type="text" name = "name" onfocus="myFunction(this)">
+
+<p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+    </form>
+</body>
+</html>

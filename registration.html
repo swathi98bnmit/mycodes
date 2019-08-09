@@ -1,0 +1,93 @@
+<html>
+  <html>
+    <head>
+<meta charset="utf-8">
+<title>Swetha: Employee Management System</title>
+<style type="text/css">
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+</style>
+
+<script>
+    function validateForm() {
+    var x = document.forms["Registration1"]["password"].value;
+    var y = document.forms["Registration1"]["reenter"].value;
+    if (x != y) {
+        alert("password and reenter passwords should be same.!");
+        return false;
+    }
+} 
+    </script>
+
+
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+        <a href="registration.html">Register New User</a>
+        <a href="empexpentry.jsp">Experience Entry</a>
+        <a href="shift.jsp">Shift Entry</a>
+        <a href="attendance.jsp">Attendance Entry</a>
+        <a href="leave.jsp">Leave Entry</a>
+        <a href="payroll.jsp">Payroll Entry</a> 
+        <a href="historyfinal.jsp">History</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <p>Employee Management System</p>
+    </div> 
+        <br><br><br><br><br><br>
+    <center>
+        <form name="Registration1" onsubmit="return validateForm()" method="post" action="empinforeg.jsp">            
+            Enter Emp ID<input type="text" name="number"><br>
+            Emp Name<input type="text" name="name"><br>             
+            Password<input type="password" name="password"><br>
+            Re-Enter Password<input type="password" name="reenter"><br>
+            DateofBirth<input type="date" name="dob"><br>
+            Gender<select name="gender">
+                <option value ="Female">Female</option>
+                <option value="Male">Male</option>                
+            </select><br>
+            DateofJoin<input type="date" name="doj"><br>
+            Department<select name="dept">
+                <option value ="Sales">Sales</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Telecall">Telecall</option>
+                <option value="Financial">Financial</option>
+            </select>
+            <br>
+            <input type="submit" name="register">
+        </form>
+    </center>
+    </body>
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2018 - 2109 swetha</div>        
+    </div>
+</html>
